@@ -11,6 +11,8 @@ __pycache__/
 .LSOverride
 .vscode
 
+.log
+
 *.sublime-project
 *.sublime-workspace
 

@@ -1018,15 +1018,11 @@ components:
       required:
         - name
       properties:
-        id:
-          type: integer
-          title: ID произведения
-          readOnly: true
         name:
           type: string
           title: Название
         year:
-          type: number
+          type: string
           title: Год выпуска
         rating:
           type: number
@@ -1051,7 +1047,7 @@ components:
           type: string
           title: Название
         year:
-          type: number
+          type: string
           title: Год выпуска
         description:
           type: string
