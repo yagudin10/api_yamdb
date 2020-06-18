@@ -1,5 +1,6 @@
 from django.conf.urls import include, url
 from django.urls import path
+
 from rest_framework.authtoken import views
 from rest_framework.routers import DefaultRouter
 from rest_framework_simplejwt.views import (TokenObtainPairView,
@@ -11,7 +12,7 @@ from .views import (CategoryViewSet, CommentDetailViewSet, CommentViewSet,
 
 router = DefaultRouter()
 router.register(r'titles/(?P<title_id>\d+)/',
-                TitleViewSet, basename='test_titles')
+                TitleViewSet, basename='titles')
 router.register(r'titles/(?P<title_id>\d+)/reviews',
                 ReviewViewSet, basename="reviews")
 router.register(
